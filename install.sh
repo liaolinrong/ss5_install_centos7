@@ -18,3 +18,4 @@ service ss5 restart
 iptables -I INPUT -p tcp --dport 10887 -j ACCEPT
 service iptables save
 
+echo "mkdir -p /var/run/ss5/" >>/etc/profile
